@@ -1,0 +1,526 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{color: inherit; text-decoration: none;}
+
+@font-face {
+    font-family: 'barbie';
+    src: url('../font/barbie.ttf') format('truetype');
+}
+
+
+
+
+section{
+    width: 100%;
+}
+
+.s0{
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* header */
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+header .hwrap{
+    width: 1600px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header .gnb{
+    display: flex;
+    font-family: Arial;
+    font-weight: bold;
+    color: #111;
+    font-size: 20px;
+    padding-top: 10px;
+}
+header .gnb li{
+    margin: 40px;
+}
+header .gnb li:hover{
+    color: #555;
+}
+
+
+
+/* main */
+main{
+    height: 880px;
+    position: relative;
+}
+.mainwrap{
+}
+main .mainwrap .tit{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: 120px;
+}
+
+main h1{
+    font-family: barbie;
+    font-size: 150px;
+    color: #fff;
+}
+main p{
+    font-family: barbie;
+    font-size: 50px;
+    color: #fff;
+    text-align: right;
+}
+main .circle1{
+    width: 350px;
+    height: 350px;
+    background-color: #013e7d;
+    border-radius: 50%;    
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    margin-left: -110px;
+}
+main .circle2{
+    width: 600px;
+    height: 600px;
+    background-color: #013e7d;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    margin-left: 120px;
+}
+main .arrow{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    background-color: transparent;
+    border: 0;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+main .arrow img{
+    width: 140px;
+}
+
+@keyframes bounce{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(20px);}
+}
+
+
+
+/* s1 */
+.s1{
+    padding-top: 140px;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.s1 .s1wrap{
+}
+.s1 h2{
+    text-align: center;
+    font-size: 35px;
+}
+.s1 .con{
+    margin-top: 100px;
+    width: 880px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
+    z-index: 50;
+    position: relative;
+}
+.s1 .pictxtbox{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.s1 .pic img{
+    width: 300px;
+    height: 380px;
+    border-radius: 15px;
+}
+.s1 .txtbox{
+    display: flex;
+    font-size: 16px;
+    margin: 76px;
+}
+.s1 .txt1{
+    font-family: Arial;
+    font-weight: bold;
+}
+.s1 p{
+    margin: 20px;
+}
+
+.s1 .circle1{
+    width: 600px;
+    height: 600px;
+    background-color: #a3c4e4;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    position: absolute;
+    left: -5%;
+    bottom: -25%;
+    animation-name: move1, fadein1;
+    animation-duration: 5s;
+}
+@keyframes move1{
+    from{
+        left: -50%;
+        bottom: 50%;
+    }
+    to{
+        left: -5%;
+        bottom: -25%;
+    }
+}
+@keyframes fadein1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.s1 .circle2{
+    width: 600px;
+    height: 600px;
+    background-color: #5782ad;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    position: absolute;
+    right: -5%;
+    top: -15%;
+    animation-name: move2, fadein2;
+    animation-duration: 5s;
+}
+@keyframes move2{
+    from{
+        right: -50%;
+        top: -30%;
+    }
+    to{
+        right: -5%;
+        top: -15%;
+    }
+}
+@keyframes fadein2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.s1 .circle3{
+    width: 150px;
+    height: 150px;
+    background-color: #e2effc;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    animation-name: move3, fadein3;
+    animation-duration: 5s;
+}
+@keyframes move3{
+    from{
+        top: -10%;
+        left: -10%;
+    }
+    to{
+        top: 15%;
+        left: 12%;
+    }
+}
+
+@keyframes fadein3{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.s1 .circle4{
+    width: 200px;
+    height: 200px;
+    background-color: #b7cee5;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    position: absolute;
+    right: 14%;
+    bottom: 12%;
+    animation-name: move4, fadein4;
+    animation-duration: 5s;
+}
+@keyframes move4{
+    from{
+        right: 0;
+        bottom: 0;
+    }
+    to{
+        right: 14%;
+        bottom: 12%;
+    }
+}
+
+@keyframes fadein4{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+/* s2 */
+.s2{
+    background-color: #113b0e;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+.s2 .s2wrap{
+    display: flex;
+    justify-content: center;
+}
+.s2 .pic .cover{
+    width: 700px;
+}
+
+.s2 .txt{
+    position: absolute;
+    left: 20%;
+    top: 26%;
+}
+.s2 .pic{
+    position: absolute;
+    left: 48%;
+    top: 20%;
+}
+
+
+.s2 .circle{
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: -20%;
+    top: -18%;
+}
+.s2 h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.s2 h2 span{
+    font-size: 16px;
+}
+.s2 .txtbox{
+    margin-bottom: 20px;
+}
+.s2 .txtbox h3{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.s2 .txtbox p{
+}
+
+
+.s2 .colorbox{
+    display: flex;
+}
+
+.s2 .color1{
+    background-color: #113b0e;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+.s2 .color2{
+    background-color: #111;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+}
+.s2 .color3{
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+}
+
+
+
+
+
+/* s3 */
+.s3{
+    height: 100vh;
+    color: #fff;
+    background-color: #013e7d;
+    position: relative;
+    overflow: hidden;
+}
+.s3 .s3wrap{
+    display: flex;
+    justify-content: center;
+}
+.s3 .txt{
+    position: absolute;
+    top: 26%;
+    right: 20%;
+}
+.s3 .pic{
+    position: absolute;
+    top: 20%;
+    right: 48%;
+}
+.s3 .circle{
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: -20%;
+    top: -18%;
+}
+.s3 .pic img{
+    width: 700px;
+}
+
+.s3 h2{
+    font-size: 30px;
+    font-family: ;
+    margin-bottom: 40px;
+}
+.s3 h2 span{
+    font-size: 16px;
+}
+.s3 .txtbox{
+    margin-bottom: 20px;
+}
+.s3 .txtbox h2 span{
+    font-size: 16px;
+    font-family: ;
+}
+.s3 .txtbox h3{
+    font-size: ;
+    font-family: ;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.s3 .txtbox p{}
+
+
+.s3 .colorbox{
+    display: flex;
+}
+
+.s3 .color1{
+    background-color: #013e7d;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+.s3 .color2{
+    background-color: #f9f4ea;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+}
+.s3 .color3{
+    background-color: #d0a95e;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+}
+
+
+
+
+/* s4 */
+.s4{
+    height: 100vh;
+    overflow: hidden;
+}
+.s4 .s4wrap{
+    position: relative;
+}
+.s4 .txtbox{
+    text-align: center;
+    transform: translateY(400px);
+    
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeDown{
+    0%{opacity: 0; transform: translateY(0);}
+    100%{opacity: 1; transform: translateY(400px);}
+}
+.s4 h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.s4 p{
+    font-size: 15px;
+}
+
+
+.s4 .circle1{
+    width: 10px;
+    height: 10px;
+    background-color: #5782ad;
+    border-radius: 50%;
+    position: absolute;
+    top: 360px;
+    left: 740px;
+    animation: pingpong 6s infinite linear;
+}
+@keyframes pingpong{
+    0%{top: 360px; left: 740px; background-color: red;}
+    10%{top: 390px;}
+    20%{top: 360px; background-color: orange;}
+    30%{top: 390px;}
+    40%{top: 360px; background-color: yellow;}
+    50%{top: 390px;}
+    60%{top: 360px; background-color: green;}
+    70%{top: 390px;}
+    80%{top: 360px;background-color: #013e7d;}
+    90%{top: 390px;}
+    100%{top: 360px; left: 1120px; background-color: violet;}
+}
+
+
